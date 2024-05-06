@@ -1,0 +1,134 @@
+.services {
+   background: var(--light);
+
+   & img {
+      width: 100%;
+      height: 100%;
+
+      @include tablet {
+         width: 90%;
+         height: 90%;
+         border-radius: 5px;
+      }
+   }
+
+   & .container {
+      @include tablet {
+         position: relative;
+      }
+   }
+
+   &__graphic {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      justify-items: end;
+      align-items: center;
+      gap: 108px;
+
+      @include tablet {
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+         gap: 0;
+      }
+
+   }
+}
+
+.graphic-title {
+   font-family: var(--font-family);
+   font-style: italic;
+   font-weight: 500;
+   font-size: 32px;
+   letter-spacing: 0.02em;
+   color: var(--dark);
+   margin-bottom: 16px;
+}
+
+.graphic-text {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 140%;
+   letter-spacing: 0.02em;
+   color: var(--dark);
+   padding-bottom: 40px;
+}
+
+.graphic-subtitle {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 21px;
+   letter-spacing: 0.02em;
+   color: var(--dark);
+   margin-bottom: 16px;
+}
+
+.graphic-subtext {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+   letter-spacing: 0.02em;
+   color: rgba(23, 23, 23, 0.8);
+}
+
+.big-img {
+   background-position: center center;
+   /* x y */
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   width: 432px;
+   height: 480px;
+
+   @include mobile {
+      max-width: 280px;
+      max-height: 320px;
+   }
+}
+
+.small-img {
+
+   background-position: center center;
+   /* x y */
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   width: 248px;
+   height: 248px;
+
+   @include tablet {
+      position: absolute;
+      left: 320px;
+      top: 270px;
+   }
+
+   @include mobile {
+      max-width: 160px;
+      max-height: 160px;
+      left: 185px;
+      top: 200px;
+   }
+
+   &__order {
+      @include mobile {
+         top: unset;
+         bottom: 150px;
+      }
+
+   }
+}
+
+.mob-container{
+   @include mobile {
+    padding: 40px 16px;
+}
+}
+
+
+.services-container {
+   padding: 96px 56px 0;
+   margin: 0 auto;
+
+}

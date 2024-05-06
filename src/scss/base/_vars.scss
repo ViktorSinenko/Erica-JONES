@@ -1,0 +1,27 @@
+:root {
+	--container-width: 1328px;
+	--container-padding: 96px 56px;
+
+	--font-main: 'Montserrat', sans-serif;
+	--font-accent: 'Montserrat', sans-serif;
+	--font-titles: var(--font-accent);
+
+
+	--light: #fefaee;
+	--dark: #171717;
+	--color-1: #9c356d;
+	--color-2: #fcd68b;
+	--color-3: #f9784c;
+
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+
+	--font-family: 'Montserrat', sans-serif;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

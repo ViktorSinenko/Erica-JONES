@@ -1,0 +1,125 @@
+.about {
+   background: #FFFAEF;
+   height: 100%;
+}
+
+.about-content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   gap: 128px;
+
+   @include tablet {
+      gap: 115px;
+   }
+
+   @include mobile {
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   &__bg-img {
+      position: absolute;
+      background: linear-gradient(151.4deg, #FEFAEE 5.26%, #FCD68B 29.9%, #F9784C 53.25%, #9C356D 72.94%);
+      width: 100%;
+      min-width: 343px;
+      height: 100%;
+      min-height: 560px;
+      z-index: 0;
+      border-radius: 500px;
+      filter: blur(50px);
+      right: 20px;
+      top: 10px;
+
+   }
+
+   &__img {
+      position: relative;
+      top: 0;
+      right: 0;
+
+   }
+
+   & img {
+      border-radius: 500px;
+      max-height: 696px;
+      min-width: 343px;
+      min-height: 560px;
+
+      @include mobile {
+         max-height: 560px;
+         max-width: 343px;
+      }
+   }
+
+   &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 544px;
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+      @include mobile {
+          max-width: 100%;
+      }
+   }
+
+
+   &__subtitle {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 48px;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--dark);
+      padding-top: 8px;
+      padding-bottom: 16px;
+
+      @include tablet {
+         font-size: 40px;
+      }
+
+   }
+
+   &__text {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: rgba(23, 23, 23, 0.8);
+   }
+
+   &__btn {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: var(--dark);
+
+      line-height: 120%;
+      border-radius: 40px;
+      padding: 12px 24px;
+      border: 1px solid rgba(23, 23, 23, 1);
+      margin-top: 40px;
+
+      &:hover {
+         transition: all .2s ease-in;
+         opacity: .5;
+
+      }
+   }
+
+   & a {
+      color: rgba(23, 23, 23, 1);
+   }
+}
+
+.container-left-50 {
+   display: inline-block;
+   position: relative;
+   max-width: 432px;
+   max-height: 696px;
+}

@@ -1,0 +1,33 @@
+.header__nav {
+	@include mobile {
+		 display: none;
+	}
+}
+
+.nav {
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(254, 250, 238, 0.6);
+}
+
+.nav__list {
+	display: flex;
+	column-gap: 40px;
+
+	@include tablet {
+		 column-gap: 25px;
+	}
+	@include mobile {
+		 flex-direction: column;
+	}
+	
+	& li{
+		cursor: pointer;
+		transition: all .2s ease-in;
+	}
+
+	& li:hover {
+		color: #fff;
+	}
+
+}

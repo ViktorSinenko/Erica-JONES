@@ -1,0 +1,130 @@
+/* Демо контент */
+.content-demo {
+	padding: 0 56px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.container-header {
+	padding: 0 56px;
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+}
+
+/* Контейнеры */
+.container {
+	padding: 96px 56px;
+	margin: 0 auto;
+	// padding: var(--container-padding);
+	max-width: 1400px;
+	max-width: var(--container-width);
+	width: 100%;
+
+	@include mobile {
+		 padding: 80px 16px;
+	}
+}
+
+.container-swiper {
+	position: relative;
+	padding: 15px;
+	max-width: 100%;
+}
+
+.container-left-50 {
+	// padding: 0 var(--container-padding);
+	max-width: 50%;
+
+	@include mobile {
+		max-width: 100%;
+		order: 1;
+	}
+}
+
+.container-left-45 {
+	// padding: 0 var(--container-padding);
+	max-width: 40%;
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+
+.container-right-50 {
+	// padding: 0 var(--container-padding);
+	max-width: 50%;
+	margin-left: auto;
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+
+.container-right-55 {
+	// padding: 0 var(--container-padding);
+	max-width: 60%;
+	margin-left: auto;
+
+	@include mobile {
+		max-width: 100%;
+	}
+}
+
+.container-top {
+	padding-top: 0;
+}
+
+.container-bottom {
+	padding-bottom: 40px;
+}
+
+.container-hr {
+	margin: 0 56px;
+
+	& hr {
+		border: 1px solid rgba(23, 23, 23, 0.16);
+	}
+}
+
+.container-right {
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-left: var(--container-padding);
+	}
+}
+
+.container-left {
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-right: var(--container-padding);
+	}
+}
+
+.container-half-left {
+	padding-right: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-left: var(--container-padding);
+	}
+
+	@include mobile {
+		padding: 0 var(--container-padding);
+	}
+}
+
+.container-half-right {
+	padding-left: calc((100% - var(--container-width)) / 2 + (var(--container-width) / 2));
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+
+	@include tablet {
+		padding-right: var(--container-padding);
+	}
+
+	@include mobile {
+		padding: 0 var(--container-padding);
+	}
+}

@@ -1,0 +1,43 @@
+.portfolio {
+   text-align: start;
+   background: var(--light);
+
+   @include mobile {
+      img {
+         display: none;
+      }
+   }
+
+
+
+   & .portfolio-box {
+      text-align: center;
+   }
+
+
+   &__subtitle {
+      padding-bottom: 40px;
+   }
+
+
+   &__box {
+      position: relative;
+      background-color: #999;
+      background-image: url('./../../img/portfolio/portfolio.jpg');
+      background-position: start center;
+      /* x y */
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include mobile {
+         min-width: 375px;
+         min-height: 975px;
+
+      }
+
+
+      @include mediaBg() {
+         background-image: url('./../../img/portfolio/portfolio@2x.jpg');
+      }
+   }
+}

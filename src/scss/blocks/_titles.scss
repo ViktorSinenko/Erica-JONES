@@ -1,0 +1,51 @@
+.title {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: rgba(249, 120, 76, 0.8);
+}
+
+
+.title-1 {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 48px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: var(--dark);
+
+	@include tablet {
+		 font-size: 40px;
+	}
+}
+
+.title-2 {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 48px;
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: var(--light);
+
+	@include tablet {
+		 font-size: 40px;
+	}
+}
+
+.title-3 {
+font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	color: var(--light);
+}
+
+.title-4 {
+	margin: 1em 0 0.5em;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: var(--font-titles);
+}

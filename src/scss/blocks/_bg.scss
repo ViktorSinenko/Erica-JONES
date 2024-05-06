@@ -1,0 +1,7 @@
+.bg {
+   height: 576px;
+   background: linear-gradient(173deg, #FFFAEF 24.53%, #FCD68B 37.59%, #F9784C 50.72%, #9C356D 62.85%, #171717 76.83%);
+   @include tablet {
+       height: 376px;
+   }
+}

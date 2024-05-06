@@ -1,0 +1,20 @@
+.sprite {
+   background: linear-gradient(-2.27deg, #FFFAEF 24.53%, #FCD68B 37.59%, #F9784C 50.72%, #9C356D 62.85%, #171717 76.83%);
+   & .container{
+      @include mobile {
+          padding: 0;
+      }
+   }
+   &__logo {
+      display: flex;
+      justify-content: space-between;
+      padding: 130px 0;
+      gap: 20px;
+
+      & a {
+         max-height: 24px;
+         min-width: 100px;
+
+      }
+   }
+}
