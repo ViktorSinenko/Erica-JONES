@@ -22,4 +22,4 @@ gulp
 gulp docs
 ```
 
-[Смотреть демо]([https://user.github.io/repo/](https://viktorsinenko.github.io/Erica-JONES/))
+[Смотреть демо]((https://viktorsinenko.github.io/Erica-JONES/))
