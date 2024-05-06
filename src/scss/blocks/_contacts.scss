@@ -1,7 +1,4 @@
-.contacts-section {
-
-
-}
+.contacts-section {}
 
 .contacts {
    display: flex;
@@ -55,6 +52,13 @@
    color: var(--light);
 }
 
+.information {
+   display: flex;
+   justify-content: space-between;
+   gap: 6px;
+   margin-bottom: 16px;
+}
+
 .contact-info {
    display: flex;
    justify-content: space-between;
@@ -65,13 +69,15 @@
       display: block;
    }
 
+
+
    & .input-group {
       display: flex;
       flex-direction: column;
    }
 }
 
-.location {}
+
 
 .location-state {
    font-family: var(--font-family);
@@ -82,7 +88,7 @@
    color: rgba(254, 250, 238, 0.8);
 }
 
-.phone {}
+
 
 .phone-number {
    font-family: var(--font-family);
