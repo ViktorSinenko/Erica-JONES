@@ -1,0 +1,56 @@
+.mask {
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   background: var(--dark);
+   top: 0;
+   z-index: 999;
+   transition: 2s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 56px;
+      width: 90%;
+      height: 2px;
+      border-radius: 2px;
+      background: #fff;
+      border-left-color: red;
+      animation: loader 1.3s linear;
+      
+   }
+}
+
+.loader {
+   position: relative;
+   width: 137px;
+   height: 137px;
+   border: 2px solid rgba(254, 250, 238, 0.24);
+   border-radius: 50%;
+   border-left-color: red;
+   animation: loader 1.3s linear infinite;
+}
+
+@keyframes loader {
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.loader-content {
+   position: absolute;
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 18px;
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+   color: var(--light);
+}
+
+.hide {
+   opacity: 0;
+}
